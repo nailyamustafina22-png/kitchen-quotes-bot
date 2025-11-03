@@ -1,2 +1,55 @@
-# kitchen-quotes-bot
-Telegram bot for guessing quotes from the series 'Kitchen'
+# Угадай цитату из Кухни - Telegram Bot
+
+Telegram-бот для игры в угадывание цитат из сериала "Кухня". Бот показывает цитаты из сериала, а пользователь угадывает, какой персонаж их сказал. Проект создан для фанатов сериала и тех, кто хочет проверить свои знания. Подходит для учебных целей и развлечения.
+
+## Функциональность
+
+- Угадывание персонажей по цитатам из сериала "Кухня"
+- Система очков и бонусов за скорость ответа
+- 15 вопросов с финальными результатами
+- Интерактивные кнопки для выбора ответов
+- Определение уровня знания сериала
+
+## Требования/зависимости
+
+- Python 3.8+
+- Зависимости: python-telegram-bot==20.7, python-dotenv==1.0.0
+- Полный список зависимостей в файле requirements.txt
+
+## Установка
+
+```bash
+git clone https://github.com/nailyamustafina22-png/kitchen-quotes-bot.git
+cd kitchen-quotes-bot
+python -m venv venv
+source venv/bin/activate #Linux/Mac
+venv\Scripts\activate #Windows
+pip install -r requirements.txt
+```
+
+## Запуск
+
+```bash
+python bot.py
+```
+
+Перед запуском создайте файл `bot_config.txt` в корневой папке и добавьте токен бота:
+
+```text
+BOT_TOKEN = ваш_токен_бота_от_BotFather
+```
+
+## Структура проекта
+
+kitchen-quotes-bot/
+├── bot.py # Основной файл Telegram бота
+├── game.py # Логика игры и механика
+├── database.py # База данных цитат и персонажей
+├── config.py # Конфигурация и настройки
+├── utils.py # Вспомогательные функции
+├── requirements.txt # Список зависимостей Python
+├── .gitignore # Файлы, исключенные из Git
+└── README.md # Документация проекта
+
+## Автор
+Мустафина Наиля Наилевна
