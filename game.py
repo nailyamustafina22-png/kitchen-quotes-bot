@@ -73,7 +73,7 @@ class KitchenGame:
         elif percent >= 50:
             level = "🔪 СУ-ШЕФ" 
             description = "Хорошо! Ты внимательно смотрел(а) сериал!"
-        elif percent >= 30:
+        elif percent >= 20:
             level = "🍳 ПОВАРЁНОК"
             description = "Неплохо, но можно и лучше!"
         else:
